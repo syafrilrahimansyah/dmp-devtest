@@ -1,0 +1,11 @@
+environment:
+  - MYSQL_ROOT_PASSWORD=root
+  - MYSQL_DATABASE=dmptest
+  - MYSQL_USER=root
+  - MYSQL_PASSWORD=0.L37+Ega+.&bX*7+10QOmQZAGWwQ57&
+  - MYSQL_TCP_PORT=6603
+healthcheck:
+  test: "/usr/bin/mysql --user=user --password=pwd --execute \"SHOW DATABASES;\""
+  interval: 5s
+  timeout: 2s
+  retries: 100
